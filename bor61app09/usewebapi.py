@@ -11,23 +11,19 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write('<html><body><h1>Use API example</h1>')
         self.response.write("""<hr><form method = "post">
         <table border = "1">
-        <tr>
-            <td height="100"><b>Enter degree :</b></td>
-            <td><input type = "textarea" name = "deg"></input></td>
-        </tr>
-        <tr>
-            <td height="100"><b>Convert from Celsius or Fahrenheit<br/>
-                (Write 'C' or 'F' in uppercase only) :</b> </td>
-            <td><input type = "textarea" name = "corf"></input></td>
-        </tr>
-        <tr>
-            <td colspan = "2" height="100"><input type = "submit"></input></td>
-        </tr>
-
+            <tr>
+                <td height="100"><b>Enter degree :</b></td>
+                <td><input type = "textarea" name = "deg"></input></td>
+            </tr>
+            <tr>
+                <td height="100"><b>Convert from Celsius or Fahrenheit<br/>
+                    (Write 'C' or 'F' in uppercase only) :</b> </td>
+                <td><input type = "textarea" name = "corf"></input></td>
+            </tr>
+            <tr>
+                <td colspan = "2" height="100"><input type = "submit"></input></td>
+            </tr>
         </table>     
-        
-        
-        
         </form>""")
         self.response.write('</body></html>')
 
